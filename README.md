@@ -321,16 +321,16 @@ docker images
 Output 
 
 ```
-REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-abhishekf5/my-first-docker-image   latest    960d37536dcd   26 seconds ago   467MB
-ubuntu                             latest    58db3edaf2be   13 days ago      77.8MB
-hello-world                        latest    feb5d9fea6a5   16 months ago    13.3kB
+IMAGE                                           ID             DISK USAGE   CONTENT SIZE   EXTRA
+hello-world:latest                              452a468a4bf9       25.9kB         9.49kB    U   
+jyotibiradar2002/my-first-docker-image:latest   4c9b5d476125        822MB          220MB        
+ubuntu:latest                                   84e77dee7d1b        119MB         31.7MB
 ```
 
 ### Run your First Docker Container
 
 ```
-docker run -it abhishekf5/my-first-docker-image
+docker run -it jyotibiradar2002/my-first-docker-image
 ```
 
 Output
@@ -342,19 +342,19 @@ Hello World
 ### Push the Image to DockerHub and share it with the world
 
 ```
-docker push abhishekf5/my-first-docker-image
+ docker push jyotibiradar2002/my-first-docker-image
 ```
 
 Output
 
 ```
 Using default tag: latest
-The push refers to repository [docker.io/abhishekf5/my-first-docker-image]
-896818320e80: Pushed
-b8088c305a52: Pushed
-69dd4ccec1a0: Pushed
-c5ff2d88f679: Mounted from library/ubuntu
-latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
+The push refers to repository [docker.io/jyotibiradar2002/my-first-docker-image]
+0908761820a6: Pushed 
+689b91d88a0f: Mounted from library/ubuntu 
+35cfdd86878d: Pushed 
+f35877df94e8: Pushed 
+latest: digest: sha256:4c9b5d476125212e90a825b558a820f22c7f6576feea89d81286675e962f6e6f size: 1185
 ```
 
 ### You must be feeling like a champ already 
